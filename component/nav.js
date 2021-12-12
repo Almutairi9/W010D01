@@ -18,4 +18,5 @@ function Nav () {
     </ul>
   );
 };
+
 export default Nav;
