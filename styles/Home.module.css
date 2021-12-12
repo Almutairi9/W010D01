@@ -11,7 +11,10 @@
   justify-content: center;
   align-items: center;
 }
-
+.ul {
+  display: flex;
+  list-style: none;
+}
 .footer {
   display: flex;
   flex: 1;
@@ -102,12 +105,31 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
+.list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 .logo {
   height: 1em;
   margin-left: 0.5rem;
 }
-
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  border-radius: 5px;
+  border: 1px solid gray;
+  gap: 10px;
+  text-align: center;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

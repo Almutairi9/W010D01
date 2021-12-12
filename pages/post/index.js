@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from '../../styles/Home.module.css'
 
 export async function getStaticProps(context) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
@@ -11,16 +12,18 @@ export async function getStaticProps(context) {
 
 function Post({ posts }) {
   return (
-    <ul>
+   <>
       {posts.map((post) => (
-        <Link href={`post/${post.id}`} key={post.id}>
-          <li>
+        <div key={post.id} className={styles.cards}>
+        <Link href={`post/${post.id}`}>
+          <>
             <h3>{post.title}</h3>
             <p>{post.body}</p>
-          </li>
+            </>
         </Link>
+        </div>
       ))}
-    </ul>
+   </>
   );
 }
 
