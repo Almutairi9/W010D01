@@ -1,4 +1,4 @@
-import Nav from './nav'
+import Nav from "./nav";
 // import Footer from './footer'
 
 export default function Layout({ children }) {
@@ -8,5 +8,5 @@ export default function Layout({ children }) {
       <main>{children}</main>
       {/* <Footer /> */}
     </>
-  )
+  );
 }
